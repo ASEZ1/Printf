@@ -6,7 +6,7 @@ void print_buffer(char buffer[], int *buff_ind);
  * _printf - Custom printf function.
  * @format: Format string.
  * Return: Number of printed characters.
- * Author: Abdellah Elasry.
+ * Author: Abdellah Elasry & Asmaa Ezzine.
  */
 int _printf(const char *format, ...)
 {
@@ -57,7 +57,7 @@ int _printf(const char *format, ...)
  * print_buffer - Prints the contents of the buffer if it exists.
  * @buffer: Array of characters to be printed.
  * @buff_ind: Index at which to add next character, represents the length.
- * Author: Abdellah Elasry.
+ * Author: Abdellah Elasry & Asmaa Ezzine.
  */
 void print_buffer(char buffer[], int *buff_ind)
 {
@@ -66,4 +66,3 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	*buff_ind = 0;
 }
-
