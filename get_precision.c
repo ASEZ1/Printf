@@ -1,13 +1,11 @@
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdarg.h>
+#include "main.h"
 
 /**
  * get_precision - Calculates the precision for printing
  * @format: Formatted string in which to print the arguments
  * @i: List of arguments to be printed.
  * @list: list of arguments.
- * Author : Asmaa Ezzine & Abdellah Elasry.
+ *
  * Return: Precision.
  */
 int get_precision(const char *format, int *i, va_list list)
@@ -22,7 +20,7 @@ int get_precision(const char *format, int *i, va_list list)
 
 	for (curr_i += 1; format[curr_i] != '\0'; curr_i++)
 	{
-		if (format[curr_i] >= '0' && format[curr_i] <= '9')
+		if (is_digit(format[curr_i]))
 		{
 			precision *= 10;
 			precision += format[curr_i] - '0';
