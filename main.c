@@ -4,7 +4,6 @@
 
 /**
  * main - Entry point
- * by Asmaa Ezzine & Abdellah Elasry.
  *
  * Return: Always 0
  */
