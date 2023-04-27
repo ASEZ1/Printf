@@ -7,10 +7,10 @@
  * @format: Formatted string in which to print the arguments
  * @i: List of arguments to be printed.
  * @list: list of arguments.
- * Author : Asmaa Ezzine.
+ * Author : Asmaa Ezzine & Abdellah Elasry.
  * Return: Precision.
  */
-int Calculates_printing_the_precision(const char *format, int *i, va_list list)
+int get_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
 	int precision = -1;
